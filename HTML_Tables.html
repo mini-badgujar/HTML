@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 5px solid rgba(0, 0, 0, 0.349);
+            padding: 5px;
+            border-collapse: collapse;
+            border-style: double;
+        }
+        table {
+            border-spacing: 30px;
+        }
+        #color1{
+            background-color: #ff0000;
+        }
+        #color2{
+            background-color: #1900ff;
+        }
+        #color3{
+            background-color: #66ff00;
+        }
+        #color4{
+            background-color: #ff00dd;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Tables in HTML</h1><br>
+    <p>we can arrange data in row and column using tables</p><br>
+    <table style="width: 50%;">
+        <caption>Name and RGB value of colors</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Color</th>
+                <th colspan="2">value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>red</td>
+                <td id="color1"></td>
+                <td>rgb(255, 0, 0)</td>
+                <td>#ff0000</td>
+            </tr>
+            <tr>
+                <td>green</td>
+                <td id="color2"></td>
+                <td>rgb(25, 0, 255)</td>
+                <td>#1900ff</td>
+            </tr>
+            <tr>
+                <td>blue</td>
+                <td id="color3"></td>
+                <td>rgb(102, 255, 0)</td>
+                <td>#66ff00</td>
+            </tr>
+            <tr>
+                <td>pink</td>
+                <td id="color4"></td>
+                <td>rgb(255, 0, 221)</td>
+                <td>#ff00dd</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
