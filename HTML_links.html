@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: blueviolet;
+        }
+        a:visited {
+            color: chartreuse;
+        }
+        a:hover {
+            color: rgb(20, 220, 220);
+        }
+        a:active {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <a href="#last">Go to last</a>
+    <h1>Links in HTML</h1>
+    <p>You can click on a link and jump to another document.</p>
+    <p>By default, links will appear as follows in all browsers:<br>
+        <li>An unvisited link is underlined and blue</li>
+        <li> A visited link is underlined and purple</li>
+        <li>An active link is underlined and red</li>
+    </p>
+    <br>
+    <p>Links contain a target attribute which specifies where to open a link</p>
+    <li>_self - Default. Opens the document in the same window/tab as it was clicked</li>
+    <li>_blank  - Opens the document in a new window or tab</li>
+    <li>blank - Open the link in a tab called 'blank' instead of opening a new one</li>
+    <li>_parent  - Opens the document in the parent frame</li>
+    <li>_top  - Opens the document in the full body of the window</li>
+    <br>
+    <br>
+    <a href="https://en.wikipedia.org/wiki/HTML" target="_self">This will open in same window</a><br><br>
+    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">This will open in new window</a><br><br>
+    <a href="https://en.wikipedia.org/wiki/HTML" target="blank">This will open in a blank open window</a><br><br>
+    <a href="https://en.wikipedia.org/wiki/HTML" target="_parent">This will open in parent frame</a><br><br>
+    <a href="https://en.wikipedia.org/wiki/HTML" target="_top">This will open in full body</a><br>
+    <p>in parent and top the body itself is a parent frame hence it will open in same page itself</p>
+    <br>
+    <h3>Image as Links</h3>
+    <a href="https://en.wikipedia.org/wiki/HTML" target="_self">
+    <img src="images\HTML.png" alt="this is HTML" width="400px" height="100px">
+    </a>
+    <h3 id="last">Link to an Email Address</h3>
+    <a href="mailto:minibadgujar@gmail.com">Send email</a>
+    
+</body>
+</html>

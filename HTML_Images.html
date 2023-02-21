@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('images/computer.jpg');
+            background-repeat: no-repeat;
+            background-size: 60%, 80%;
+        }
+        #images{
+            margin-left: 50px;
+            height: 400px;
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <div id="images">
+        <p>Image Maps in HTML</p>
+        <p>An image map is an image with clickable areas.</p>
+        <p>If you click on diffrent part of image you can visit diffrent websites</p>
+        <img src="images\HTML.png" alt="this is HTML" width="400px" height="100px" usemap="#imgmap">
+        <map name="imgmap">
+            <area shape="rect" coords="54,2,140,108" href="https://en.wikipedia.org/wiki/HTML">
+            <area shape="rect" coords="170,2,258,108" href="https://en.wikipedia.org/wiki/CSS">
+            <area shape="rect" coords="290,2,374,108" href="https://en.wikipedia.org/wiki/JavaScript">
+        </map>
+        <p>The PC displayed here is a background image</p>
+        <h3>The HTML picture Element</h3>
+        <p>
+            The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+        </p>
+    </div>
+</body>
+</html>
