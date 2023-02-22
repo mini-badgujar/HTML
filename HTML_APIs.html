@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+          width: 350px;
+          height: 70px;
+          padding: 10px;
+          border: 1px solid #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>APIs in HTML</h1>
+    <h3>Geolocation API</h3>
+    <p>The getCurrentPosition() method is used to return the user's position</p>
+    <p>Click the button to get your coordinates.</p>
+    <button onclick="getLocation()">Get your Location</button>
+    <p id="location"></p>
+    <br>
+    <br>
+    <h3>Drag and Drop API</h3>
+    <p>Drag and drop api let you grab a object and then drop it to another element</p>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <img id="drag1" src="images\HTML.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+    <p>drag an drop this image in the above box</p>
+    <br>
+    <h3>HTML Web Storage API</h3>
+    <p>With web storage, web applications can store data locally within the user's browser.</p>
+    <div id="result"></div>
+    <p>click this button</p>
+    <button onclick="countnum()">click me</button>
+    <div id="countx"></div>
+
+    <br>
+    <br>
+    <h3>HTML Web Workers API</h3>
+    <p>A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.</p>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+    <script>
+        var x = document.getElementById("location");
+        function getLocation(){
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } 
+            else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function Position(){
+            x.innerHTML = "Latitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude;
+        }
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+
+        localStorage.setItem("lastname", "Damini");
+        document.getElementById("result").innerHTML = localStorage.getItem("lastname"); 
+
+        function countnum(){
+            localStorage.clickcoun = Number(localStorage.clickcount)+1;
+            document.getElementById("countx").innerHTML = "You have clicked the button " + localStorage.clickcoun + " time(s).";
+        
+        }
+    </script>
+</body>
+</html>

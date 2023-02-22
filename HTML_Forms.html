@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            background-color: darkgray;
+        }
+        h4{
+            background-color: rgb(250, 255, 180);
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <p>HTML form is used to collect user input and send it to server for processing</p>
+    <h3 >Form Element</h3>
+    <p>Form element is a container for diffrent type of input elements</p>
+    <form>
+        <p style="background-color: rgb(250, 255, 180);">this is a text input: </p>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+
+        <br>
+
+        <p style="background-color: rgb(250, 255, 180);">this is a radio input: </p>
+        <input type="radio" id="A" name="choice" value="A">
+        <label for="A">A</label><br>
+        <input type="radio" id="B" name="choice" value="B">
+        <label for="B">B</label><br>
+        <input type="radio" id="C" name="choice" value="C">
+        <label for="C">C</label>
+
+        <br>
+
+        <p style="background-color: rgb(250, 255, 180);">this is a checkbox input: </p>
+        <input type="checkbox" id="apple" name="fruit" value="apple">
+        <label for="apple">APPLE</label><br>
+        <input type="checkbox" id="orange" name="fruit" value="orange">
+        <label for="orange">ORANGE</label><br>
+        <input type="checkbox" id="grapes" name="fruit" value="grapes">
+        <label for="grapes">GRAPES</label>
+
+        <br>
+
+        <p style="background-color: rgb(250, 255, 180);">this is a submit input: </p>
+        <input type="submit"><br>
+        <br>
+        <p style="background-color: rgb(250, 255, 180);">this is Button input: </p>
+        <input type="button" id="button" name="button" value="Button"><br>
+    </form>
+    <br>
+    <br>
+    <h3>FORM Attributes</h3>
+    <h4 >Action Attribute: </h4>
+    <p>The action attribute defines the action to be performed when the form is submitted.</p>
+    <h4>Target Attribute: </h4>
+    <p>The target attribute specifies where to display the response that is received after submitting the form.</p>
+    <ol>
+        <li>_blank</li>
+        <li>_self</li>
+        <li>_parent</li>
+        <li>_top</li>
+        <li>framename</li>
+    </ol>
+    <h4>Method Attribute: </h4>
+    <p>The method attribute specifies the HTTP method to be used when submitting the form data.</p>
+    <p>The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post"). The default HTTP method when submitting form data is GET.</p>
+    <h4 >Autocomplete Attribute</h4>
+    <p>The autocomplete attribute specifies whether a form should have autocomplete on or off.</p>
+    <h4 >Novalidate Attribute</h4>
+    <p>The novalidate attribute is a boolean attribute. It specifies that the form-data (input) should not be validated when submitted.</p>
+    
+    <br>
+
+    <h3>Form Elements</h3>
+    <h4>
+        <ul>
+            <li>input</li>
+            <li>label: it defines label for several form elements</li>
+            <li>select: it defines a drop-down list</li>
+            <li>textarea: it defines a multi-line input field</li>
+            <li>button</li>
+            <li>feildset: it is used to group related data in a form.</li>
+            <li>legend: it defines a caption for the fieldset element</li>
+            <li>datalist: it specifies a list of pre-defined options for an input element</li>
+            <li>output: it represents the result of a calculation</li>
+            <li>option: it defines an option that can be selected.</li>
+            <li>optgroup</li>
+        </ul>
+    </h4>
+</body>
+</html>
