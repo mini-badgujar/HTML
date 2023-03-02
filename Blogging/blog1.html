@@ -18,8 +18,13 @@
             background-color: rgb(164, 196, 186);
             height: 80px;
             width: 100%;
+            position: fixed;
+            top: 0;
         }
-
+        #box{
+            height: 100px;
+            width: 100%;
+        }
         #heading {
             position: fixed;
             margin-left: 20px;
@@ -51,9 +56,10 @@
         }
 
         .content {
-            width: 10%;
+            width: 14%;
             padding-left: 60px;
             border: 1px soild gray;
+            box-sizing: border-box;
         }
         .content a{
             text-decoration: none;
@@ -64,8 +70,15 @@
         }
 
         .contex {
-            width: 80%;
+            width: 67%;
             text-align: justify;
+        }
+        .images{
+            box-sizing: border-box;
+            margin-top: 50px;
+            padding: 10px;
+            width: 13%;
+            text-align: right
         }
         footer {
             padding-top: 7px;
@@ -91,6 +104,7 @@
         
         </nav>
     </header>
+    <div id="box"></div>
     <section class="boxbody">
         <div class="content">
             <h3>Content</h3>
@@ -219,8 +233,10 @@
                 blooming plants, partly because of their agreeable appearance and smell. Around the world, people use
                 flowers to mark important events in their lives</p>
         </div>
-        <div>
-            <img src="../images/flower1.png">
+        <div class="images">
+            <img src="..\images\flower1.png">
+            <img src="..\images\flower2.jpg">
+            <img src="..\images\flower3.png">
         </div>
     </section>
     <footer>
